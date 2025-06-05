@@ -247,6 +247,122 @@
   text-align: center;
 }
 
+.banner-inicio {
+  background: linear-gradient(120deg, #f8fafc 60%, #e0e7ef 100%);
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  margin: 2rem auto 2.5rem auto;
+  max-width: 700px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+}
+.banner-inicio h2 {
+  font-size: 2.2rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+.banner-inicio p {
+  font-size: 1.15rem;
+  color: #4a5568;
+  margin-bottom: 1.2rem;
+}
+.banner-btn {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.8rem 2.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px 0 rgba(37,211,102,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+.banner-btn:hover {
+  background: #128c7e;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.info-extra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 900px;
+}
+.info-item {
+  background: #f8fafc;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 300px;
+}
+.info-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.7rem;
+}
+.info-item h3 {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+.info-item p {
+  color: #4a5568;
+  font-size: 1rem;
+}
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+.red-social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f8fafc;
+  border-radius: 2rem;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 500;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);
+  transition: background 0.2s, color 0.2s;
+}
+.red-social-link:hover {
+  background: #e0e7ef;
+  color: #1877f2;
+}
+.red-social-link[aria-label="Instagram"]:hover {
+  color: #e1306c;
+}
+.red-social-img {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.red-social-icon {
+  font-size: 1.7rem;
+}
+@media (max-width: 700px) {
+  .info-extra {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .redes-sociales {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .productos-grid {
     grid-template-columns: 1fr;

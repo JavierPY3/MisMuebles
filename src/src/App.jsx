@@ -23,7 +23,7 @@ const productos = [
 	},
 	{
 		id: 2,
-		nombre: 'Juedo de sillas+mesa',
+		nombre: 'Juego de sillas+mesa',
 		descripcion: '6 sillas reforzadas + mesa de comedor reforzada.',
 		precio: '$285.000',
 		imagenes: [
@@ -43,11 +43,11 @@ const productos = [
 	},
 	{
 		id: 3,
-		nombre: 'sillones',
+		nombre: 'Sillones',
 		descripcion: 'Sillones para todo uso reforzado.',
 		precio: '$199.000',
 		imagenes: [
-			'/Sillones-1.jpg.jpg',
+			'/sillones-1.jpg.jpg',
 			'/sillones-2.jpg.jpg',
 			'/sillones-3.jpg.jpg',
 			'/sillones-4.jpg.jpg',
@@ -103,10 +103,20 @@ function App() {
 					</div>
 				</div>
 			)}
+			<div className="banner-inicio">
+				<h2>Bienvenido a Mis Muebles</h2>
+				<p>
+					Encuentra los mejores muebles para tu hogar, con atención personalizada y
+					entrega rápida.
+				</p>
+				<a href="#productos" className="banner-btn">
+					Ver productos
+				</a>
+			</div>
 			<div className="logo-header">
 				<img src="/logo.pnj.jpg" alt="Logo mismuebles" className="logo-img" />
 			</div>
-			<h1>Mis Muebles</h1>
+			<h1 id="productos">Mis Muebles</h1>
 			<p className="subtitulo">
 				¡Compra fácil y rápido! Haz clic en el producto para concretar tu compra
 				por WhatsApp.
@@ -180,6 +190,42 @@ function App() {
 						</div>
 					)
 				})}
+			</div>
+			<div className="info-extra">
+				<div className="info-item">
+					<span className="info-icon" role="img" aria-label="Envíos">
+						🚚
+					</span>
+					<h3>Envíos accesibles</h3>
+					<p>
+						Tarifas económicas y entregas rápidas.<br />
+						<span style={{ fontSize: '0.97em', color: '#6b7280' }}>Sujeto a tarifas de envío según ubicación.</span>
+					</p>
+				</div>
+				<div className="info-item">
+					<span className="info-icon" role="img" aria-label="Pagos">
+						💳
+					</span>
+					<h3>Facilidad de pago</h3>
+					<p>Aceptamos métodos de pago (Efectivo - Transferencia) y posibilidad de pagos en cuotas.</p>
+				</div>
+				<div className="info-item">
+					<span className="info-icon" role="img" aria-label="Atención">
+						🤝
+					</span>
+					<h3>Atención personalizada</h3>
+					<p>
+						Te asesoramos en todo momento para que elijas lo mejor para tu hogar.
+					</p>
+				</div>
+			</div>
+			<div className="redes-sociales">
+				<a href="https://www.facebook.com/Mismuebles.club/" className="red-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+					<img src="/facebook-logo.png" alt="Facebook" className="red-social-img" /> Facebook
+				</a>
+				<a href="https://www.instagram.com/mismuebles.club/" className="red-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+					<img src="/instagram-logo.png" alt="Instagram" className="red-social-img" /> Instagram
+				</a>
 			</div>
 			<footer className="footer-derechos">
 				&copy; {new Date().getFullYear()} mismuebles.com - Todos los derechos
