@@ -6,7 +6,7 @@ const productos = [
 		id: 1,
 		nombre: 'Juegos de sillas',
 		descripcion: '6 sillas solas de comedor reforzadas.',
-		precio: '$210.000',
+		precio: '$235.000',
 		imagenes: [
 			'/juegos-sillas-1.jpg.jpg',
 			'/juegos-sillas-2.jpg.jpg',
@@ -25,7 +25,7 @@ const productos = [
 		id: 2,
 		nombre: 'Juego de sillas+mesa',
 		descripcion: '6 sillas reforzadas + mesa de comedor reforzada.',
-		precio: '$285.000',
+		precio: '$260.000',
 		imagenes: [
 			'/sillas-mesa-1.jpg.jpg',
 			'/sillas-mesa-2.jpg.jpg',
@@ -45,7 +45,7 @@ const productos = [
 		id: 3,
 		nombre: 'Sillones',
 		descripcion: 'Sillones para todo uso reforzado.',
-		precio: '$210.000',
+		precio: '$230.000',
 		imagenes: [
 			'/sillones-1.jpg.jpg',
 			'/sillones-2.jpg.jpg',
